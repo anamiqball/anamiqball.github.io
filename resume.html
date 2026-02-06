@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Anam Iqbal</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body data-page="resume">
+  <header>
+    <div class="container navbar">
+      <div class="brand">
+        <div class="name">Anam Iqbal</div>
+        <div class="tag">Resume</div>
+      </div>
+      <nav class="tabs">
+        <a class="tab" data-tab="home" href="index.html">Home</a>
+        <a class="tab" data-tab="research" href="research.html">Research</a>
+        <a class="tab" data-tab="projects" href="projects.html">Projects</a>
+        <a class="tab" data-tab="experience" href="experience.html">Experience</a>
+        <a class="tab" data-tab="resume" href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Resume</h2>
+      <p class="muted" style="margin-top:0;">
+        Upload a file named <strong>resume.pdf</strong> to the repository root to enable the embedded preview below.
+      </p>
+
+      <div class="row" style="margin: 12px 0 0;">
+        <a class="button" href="resume.pdf">Download resume.pdf</a>
+        <a class="button secondary" href="index.html">Back to Home</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Preview</h2>
+      <div style="border:1px solid var(--line); border-radius:14px; overflow:hidden;">
+        <iframe title="Resume PDF" src="resume.pdf#view=FitH" style="width:100%; height:900px; border:0;"></iframe>
+      </div>
+      <p class="muted" style="margin-bottom:0;">
+        If the preview is blank, it usually means resume.pdf hasn’t been uploaded yet.
+      </p>
+    </section>
+
+    <footer>© <span id="year"></span> Anam Iqbal</footer>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
