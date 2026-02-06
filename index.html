@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anam Iqbal</title>
+  <meta name="description" content="Portfolio, projects, and contact." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; background:#0b0c0f; color:#e7e9ee; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 22px; }
+    a { color: #7aa2ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card { background:#12141a; border:1px solid #232635; border-radius:16px; padding:18px; margin:16px 0; }
+    .muted { color:#aab0c0; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .pill { border:1px solid #232635; border-radius:999px; padding:6px 10px; color:#aab0c0; font-size:13px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 style="margin:0; font-size:40px;">Anam Iqbal</h1>
+    <p class="muted" style="margin:10px 0 0;">Computer Science (CS) graduate student • Distributed systems • Storage</p>
+
+    <div class="card">
+      <div class="row">
+        <a href="mailto:your@email.com">your@email.com</a>
+        <span class="muted">•</span>
+        <a href="https://github.com/anam181">GitHub</a>
+        <span class="muted">•</span>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 8px;">About</h2>
+      <p class="muted" style="margin:0;">
+        Write 2–3 lines about what you work on and what you’re looking for (PhD, research roles, internships).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 8px;">Skills</h2>
+      <div class="row">
+        <span class="pill">Go</span><span class="pill">C/C++</span><span class="pill">Python</span>
+        <span class="pill">Linux</span><span class="pill">Distributed Systems</span><span class="pill">Databases</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 8px;">Projects</h2>
+      <ul style="margin:0; padding-left:18px;">
+        <li><strong>Project 1</strong> — one-line impact. <a href="#">Repo</a></li>
+        <li><strong>Project 2</strong> — one-line impact. <a href="#">Repo</a></li>
+      </ul>
+    </div>
+
+    <p class="muted" style="margin-top:22px;">© <span id="y"></span> Anam Iqbal</p>
+  </main>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
