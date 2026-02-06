@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Anam Iqbal</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body data-page="research">
+  <header>
+    <div class="container navbar">
+      <div class="brand">
+        <div class="name">Anam Iqbal</div>
+        <div class="tag">Research</div>
+      </div>
+      <nav class="tabs">
+        <a class="tab" data-tab="home" href="index.html">Home</a>
+        <a class="tab" data-tab="research" href="research.html">Research</a>
+        <a class="tab" data-tab="projects" href="projects.html">Projects</a>
+        <a class="tab" data-tab="experience" href="experience.html">Experience</a>
+        <a class="tab" data-tab="resume" href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Research interests</h2>
+      <p class="muted" style="margin:0;">
+        Distributed systems; storage and caching; tiered memory; key-value (KV) stores; measurement and observability; fault tolerance.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Systems and Storage Group — University of Utah (Prof. Ryan Stutsman)</h2>
+      <div class="kicker">Aug 2025 – Present • ObjecTier and Segcache: measurement-driven memory tiering and hot-object consolidation</div>
+      <ul class="list">
+        <li>Extended Segcache with a stable scan interface for background analysis while preserving time-to-live (TTL) expiration behavior.</li>
+        <li>Added epoch-scoped hit counters to estimate recency-weighted hotness, then aggregated hotness at both segment level and 4 kibibyte (KiB) page level.</li>
+        <li>Built a Python trace-replay and analysis pipeline to summarize skew with distributional views (for example, cumulative distribution functions (CDFs)) and guide placement decisions.</li>
+        <li>Benchmarked dynamic random-access memory (DRAM) / solid-state drive (SSD) tiering against least recently used (LRU) / least frequently used (LFU) baselines on skew-shift traces; ran sensitivity and ablation studies.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>FLUX Research Group — University of Utah (Prof. Jacobus Van der Merwe)</h2>
+      <div class="kicker">2025 – Present • Measurement workflows for open 5G stacks and mobility behavior</div>
+      <ul class="list">
+        <li>Collected protocol traces and packet captures in controlled experiments to tie user-visible disruption to concrete mobility events.</li>
+        <li>Built repeatable analysis workflows that connect hypotheses to measurements, with an emphasis on observability and validation.</li>
+      </ul>
+    </section>
+
+    <footer>© <span id="year"></span> Anam Iqbal</footer>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
