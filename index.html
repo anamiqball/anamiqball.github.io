@@ -6,11 +6,11 @@
   <title>Anam Iqbal</title>
   <meta name="description" content="Portfolio, research, projects, and contact." />
 
-  <!-- Cache-bust + absolute path so GitHub Pages always loads latest -->
-  <link rel="stylesheet" href="/assets/theme.css?v=6" />
+  <!-- Use ONE stylesheet; cache-bust to force refresh -->
+  <link rel="stylesheet" href="/assets/theme.css?v=1" />
 </head>
 
-<body data-page="home">
+<body>
   <header>
     <div class="container navbar">
       <div class="brand">
@@ -21,12 +21,12 @@
         </div>
       </div>
 
-      <nav class="tabs">
-        <a class="tab" data-tab="home" href="/index.html">Home</a>
-        <a class="tab" data-tab="research" href="/research.html">Research</a>
-        <a class="tab" data-tab="projects" href="/projects.html">Projects</a>
-        <a class="tab" data-tab="experience" href="/experience.html">Experience</a>
-        <a class="tab" data-tab="resume" href="/resume.html">Resume</a>
+      <nav class="tabs" aria-label="Primary navigation">
+        <a class="tab active" href="/index.html">Home</a>
+        <a class="tab" href="/research.html">Research</a>
+        <a class="tab" href="/projects.html">Projects</a>
+        <a class="tab" href="/experience.html">Experience</a>
+        <a class="tab" href="/resume.html">Resume</a>
       </nav>
     </div>
   </header>
@@ -34,23 +34,29 @@
   <main class="container">
     <section class="hero">
       <div class="card">
-        <h1>Anam Iqbal</h1>
-        <p class="muted" style="margin:10px 0 0;">
-          M.S. in Computing (University of Utah) • Distributed systems • Storage and caching
-        </p>
+        <div class="hero-top">
+          <!-- Upload your photo as /assets/headshot.png -->
+          <img class="headshot" src="/assets/headshot.png?v=1" alt="Headshot of Anam Iqbal" />
+          <div>
+            <h1>Anam Iqbal</h1>
+            <p class="subline">
+              M.S. in Computing (University of Utah) • Distributed systems • Storage and caching
+            </p>
 
-        <div class="section row" style="margin-top:14px;">
-          <a href="mailto:u1529172@utah.edu">u1529172@utah.edu</a>
-          <span class="dot">•</span>
-          <a href="https://github.com/anam181">github.com/anam181</a>
-          <span class="dot">•</span>
-          <a href="https://www.linkedin.com/in/anamiqbaldataanalyst">linkedin.com/in/anamiqbaldataanalyst</a>
-        </div>
+            <div class="row links">
+              <a href="mailto:u1529172@utah.edu">u1529172@utah.edu</a>
+              <span class="dot">•</span>
+              <a href="https://github.com/anam181">github.com/anam181</a>
+              <span class="dot">•</span>
+              <a href="https://www.linkedin.com/in/anamiqbaldataanalyst">linkedin.com/in/anamiqbaldataanalyst</a>
+            </div>
 
-        <div class="section row" style="margin-top:12px;">
-          <a class="button" href="/projects.html">View Projects</a>
-          <a class="button secondary" href="/research.html">Research</a>
-          <a class="button secondary" href="/resume.html">Resume</a>
+            <div class="row ctas">
+              <a class="button" href="/projects.html">View Projects</a>
+              <a class="button secondary" href="/research.html">Research</a>
+              <a class="button secondary" href="/resume.html">Resume</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -66,7 +72,7 @@
 
     <section class="card">
       <h2>About</h2>
-      <p class="muted" style="margin:0;">
+      <p class="muted">
         I’m a master’s student at the University of Utah working on systems research spanning storage/caching and
         measurement-driven analysis. I’m interested in PhD opportunities and research roles in distributed systems.
       </p>
@@ -92,7 +98,8 @@
     </footer>
   </main>
 
-  <!-- Cache-bust JS too -->
-  <script src="/assets/script.js?v=6"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
