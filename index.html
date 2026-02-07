@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anam Iqbal</title>
-  <meta name="description" content="Anam Iqbal — Data Engineering & Systems. Portfolio, experience, and contact." />
-  <!-- cache-bust to force refresh -->
-  <link rel="stylesheet" href="assets/style.css?v=7" />
+  <meta name="description" content="Anam Iqbal — Data, Systems, Measurement. Experience, research, projects, and contact." />
+  <!-- cache-bust so you always see updates -->
+  <link rel="stylesheet" href="assets/style.css?v=9" />
 </head>
 
 <body data-page="home">
   <header>
     <div class="container navbar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Home">
         <div class="avatar">AI</div>
         <div class="brand-text">
           <div class="name">Anam Iqbal</div>
@@ -20,109 +20,94 @@
         </div>
       </a>
 
-      <nav class="tabs">
-        <a class="tab" data-tab="home" href="index.html">Home</a>
+      <nav class="tabs" aria-label="Primary navigation">
         <a class="tab" data-tab="experience" href="experience.html">Experience</a>
         <a class="tab" data-tab="projects" href="projects.html">Projects</a>
         <a class="tab" data-tab="research" href="research.html">Research</a>
-        <a class="tab" data-tab="resume" href="resume.html">Resume</a>
         <a class="tab" data-tab="contact" href="contact.html">Contact</a>
+
+        <!-- Resume = button (not a tab). Put resume.pdf in repo root -->
+        <a class="tab tab-cta" href="resume.pdf" download>Resume ⬇</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <!-- LEFT: main landing card -->
+      <!-- LEFT card -->
       <div class="card">
         <div class="hero-profile">
-          <!-- Put your photo at assets/headshot.png -->
           <img
             class="headshot"
-            src="assets/headshot.png?v=7"
+            src="assets/headshot.png?v=9"
             alt="Headshot of Anam Iqbal"
-            width="112"
-            height="112"
+            width="140"
+            height="140"
             loading="lazy"
           />
 
           <div class="hero-text">
             <h1 class="hero-name">Anam Iqbal</h1>
+
             <div class="hero-roles">
               Systems Researcher <span class="sep">•</span> Senior Data Engineer <span class="sep">•</span> Analytics Engineer
             </div>
 
             <p class="hero-sub muted">
-              M.S. in Computing (University of Utah) <span class="sep">•</span> Open to Data Engineering / Backend / Platform roles
+              M.S. in Computing (University of Utah) <span class="sep">•</span> Systems, storage, and measurement-driven work
             </p>
 
             <p class="hero-blurb muted">
-              I build reliable data systems end-to-end: extract–transform–load (ETL), data warehousing, pipelines,
-              application programming interfaces (APIs), and measurement-driven analysis.
+              I build and evaluate reliable systems: data pipelines and warehousing, performance measurement,
+              and distributed-systems projects.
             </p>
 
             <div class="link-row">
               <a class="linkpill" href="mailto:u1529172@utah.edu">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4V6zm8 7L5.5 8.5h13L12 13z" fill="currentColor"/></svg>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-11zm2.1-.5 5.4 4.05c.3.22.7.22 1 0L17.9 6H6.1zm11.8 1.6-4.9 3.68c-.86.64-2.04.64-2.9 0L5.1 7.6V17.5c0 .55.45 1 1 1h11.8c.55 0 1-.45 1-1V7.6z"/>
+                </svg>
                 <span>u1529172@utah.edu</span>
               </a>
 
               <a class="linkpill" href="https://github.com/anam181" target="_blank" rel="noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.18-3.35-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.33 1.08 2.9.82.09-.64.35-1.08.63-1.33-2.21-.25-4.53-1.11-4.53-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0112 6.8c.85 0 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.32 4.7-4.54 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.57.69.48A10 10 0 0012 2z"/></svg>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.18-3.35-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.33 1.08 2.9.82.09-.64.35-1.08.63-1.33-2.21-.25-4.53-1.11-4.53-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0112 6.8c.85 0 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.32 4.7-4.54 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.57.69.48A10 10 0 0012 2z"/>
+                </svg>
                 <span>GitHub</span>
               </a>
 
               <a class="linkpill" href="https://www.linkedin.com/in/anamiqbaldataanalyst" target="_blank" rel="noreferrer">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 23.5h4V7.98h-4V23.5zM8 7.98h3.83v2.12h.05c.53-1 1.83-2.12 3.77-2.12 4.03 0 4.77 2.65 4.77 6.1v9.42h-4v-8.35c0-1.99-.04-4.55-2.77-4.55-2.77 0-3.19 2.16-3.19 4.4v8.5H8V7.98z"/></svg>
+                <!-- Cleaner LinkedIn icon (aligned with others) -->
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M6.94 6.5A2.44 2.44 0 114.5 4.06 2.44 2.44 0 016.94 6.5zM5 21h3.9V8.5H5V21zM10.6 8.5h3.74v1.7h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.61 4.69 6V21h-3.9v-5.48c0-1.31-.03-3-1.83-3s-2.11 1.43-2.11 2.91V21h-3.9V8.5z"/>
+                </svg>
                 <span>LinkedIn</span>
               </a>
             </div>
 
-            <div class="section row" style="margin-top:14px;">
-              <a class="button" href="experience.html">View Experience</a>
-              <a class="button secondary" href="projects.html">View Projects</a>
-              <a class="button secondary" href="contact.html">Contact Me</a>
+            <div class="row" style="margin-top:14px;">
+              <a class="button" href="experience.html">Experience</a>
+              <a class="button secondary" href="projects.html">Projects</a>
+              <a class="button secondary" href="research.html">Research</a>
+              <a class="button secondary" href="contact.html">Contact</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT: concise “what I do” card (no giant stats tiles) -->
-      <div class="card">
-        <h2>What I do</h2>
+      <!-- RIGHT card (shifted down) -->
+      <div class="card side-card">
+        <h2>Highlights</h2>
         <ul class="list">
-          <li><strong>Data engineering:</strong> ETL, data modeling, warehousing, pipeline reliability.</li>
-          <li><strong>Systems:</strong> distributed systems coursework/projects; performance & measurement.</li>
-          <li><strong>Tools:</strong> Python, SQL, Apache Spark, Linux, cloud data stacks.</li>
+          <li><strong>Industry:</strong> shipped production data systems and analytics workflows.</li>
+          <li><strong>Research:</strong> systems measurement/instrumentation and analysis pipelines.</li>
+          <li><strong>Strengths:</strong> reliability, performance thinking, and clean engineering.</li>
         </ul>
 
         <div class="mini-note">
-          <strong>Note:</strong> This site is optimized for industry recruiting. Research is included, but secondary.
+          Explore tabs above for full details (Experience, Projects, Research).
         </div>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>About</h2>
-      <p class="muted" style="margin:0;">
-        I’m a master’s student at the University of Utah with industry experience in data engineering and analytics engineering.
-        I’m currently applying for roles in data engineering, backend, and platform engineering—where I can ship reliable systems
-        and measure what matters.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Skills (quick peek)</h2>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Apache Spark</span>
-        <span class="chip">ETL</span>
-        <span class="chip">Data Warehousing</span>
-        <span class="chip">Linux</span>
-        <span class="chip">Git</span>
-        <span class="chip">Go</span>
-        <span class="chip">C++</span>
       </div>
     </section>
 
