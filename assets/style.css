@@ -277,3 +277,26 @@ footer{
   .brand{ min-width: auto; }
   .highlights{ max-width: none; }
 }
+
+/* --- FIX: stop social icons from exploding --- */
+.social-row { display:flex; flex-wrap:wrap; gap:12px; }
+
+.social{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+}
+
+.social .logo{
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  flex: 0 0 28px !important;
+  display: inline-block !important;
+}
+
+.social .logo *{
+  vector-effect: non-scaling-stroke;
+}
+
