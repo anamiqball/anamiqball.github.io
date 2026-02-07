@@ -150,13 +150,13 @@ header{
 
 /* Bigger photo */
 .headshot{
-  width: 180px;
-  height: 180px;
+  width: 190px;
+  height: 190px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid rgba(15,23,42,0.12);
   box-shadow: 0 18px 45px rgba(15,23,42,0.12);
-  flex: 0 0 160px;
+  flex: 0 0 180px;
   display:block;
 }
 
