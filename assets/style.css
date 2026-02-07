@@ -300,3 +300,5 @@ footer{
   vector-effect: non-scaling-stroke;
 }
 
+.social svg { width: 28px !important; height: 28px !important; }
+
