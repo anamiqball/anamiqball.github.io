@@ -159,8 +159,8 @@ header{
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transform: scale(1.9);
-  transform-origin: center 5%;
+  transform: scale(1.9) translateY(-5%);
+  transform-origin: center center;
   display: block;
 }
 
