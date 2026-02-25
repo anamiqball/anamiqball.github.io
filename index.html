@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anam Iqbal</title>
   <meta name="description" content="Anam Iqbal — Data, Systems, Measurement. Experience, research, projects, and contact." />
-  <link rel="stylesheet" href="assets/style.css?v=13" />
+  <link rel="stylesheet" href="assets/style.css?v=14" />
 </head>
 
 <body data-page="home">
@@ -32,38 +32,18 @@
   <main class="container">
     <section class="hero">
       <div class="card">
-        <div class="hero-profile">
-          <img
-            class="headshot"
-            src="assets/headshot.png?v=10"
-            alt="Headshot of Anam Iqbal"
-            width="150"
-            height="150"
-            loading="lazy"
-          />
+        <div class="hero-layout">
 
-          <div class="hero-text">
-            <h1 class="hero-name">Anam Iqbal</h1>
+          <!-- Left: photo + contact -->
+          <div class="hero-aside">
+            <img
+              class="headshot"
+              src="assets/headshot.png?v=10"
+              alt="Headshot of Anam Iqbal"
+              loading="lazy"
+            />
 
-            <div class="hero-roles">
-              Systems Researcher <span class="sep">•</span>
-              Senior Data Engineer <span class="sep">•</span>
-              Analytics Engineer
-            </div>
-
-            <p class="hero-sub muted">
-              M.S. in Computer Science — University of Utah
-            </p>
-
-            <p class="hero-blurb muted">
-              M.S. candidate at the University of Utah, currently researching storage systems and
-              measurement — memory-tiering in key-value stores and observability in open 5G stacks.
-              Before grad school, I spent four years building and running production data systems
-              across telecom and real estate tech. I care about the intersection of rigorous
-              measurement and practical engineering.
-            </p>
-
-            <div class="social-row">
+            <div class="social-col">
               <a class="social" href="mailto:u1529172@utah.edu" aria-label="Email">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -86,18 +66,42 @@
               </a>
             </div>
           </div>
+
+          <!-- Right: intro + highlights -->
+          <div class="hero-main">
+            <h1 class="hero-name">Anam Iqbal</h1>
+
+            <div class="hero-roles">
+              Systems Researcher <span class="sep">•</span>
+              Senior Data Engineer <span class="sep">•</span>
+              Analytics Engineer
+            </div>
+
+            <p class="hero-sub muted">
+              M.S. in Computer Science — University of Utah
+            </p>
+
+            <p class="hero-blurb muted">
+              M.S. candidate at the University of Utah, currently researching storage systems and
+              measurement — memory-tiering in key-value stores and observability in open 5G stacks.
+              Before grad school, I spent four years building and running production data systems
+              across telecom and real estate tech. I care about the intersection of rigorous
+              measurement and practical engineering.
+            </p>
+
+            <div class="hero-divider"></div>
+
+            <h2>Highlights</h2>
+            <ul class="list">
+              <li>Shipped 12+ production ETL pipelines ingesting 500+ GB of batch data; reduced processing time by 40% at Dubizzle Group.</li>
+              <li>Led a cross-functional project generating $1M+ in impact through geographic optimization across 13 data marts at Jazz.</li>
+              <li>Active researcher in two University of Utah groups — storage systems (ObjecTier/Segcache) and 5G observability (FLUX).</li>
+              <li>Mentored 500+ students across four courses as a Teaching Assistant at LUMS.</li>
+            </ul>
+          </div>
+
         </div>
       </div>
-    </section>
-
-    <section class="card highlights">
-      <h2>Highlights</h2>
-      <ul class="list">
-        <li>Shipped 12+ production ETL pipelines ingesting 500+ GB of batch data; reduced processing time by 40% at Dubizzle Group.</li>
-        <li>Led a cross-functional project generating $1M+ in impact through geographic optimization across 13 data marts at Jazz.</li>
-        <li>Active researcher in two University of Utah groups — storage systems (ObjecTier/Segcache) and 5G observability (FLUX).</li>
-        <li>Mentored 500+ students across four courses as a Teaching Assistant at LUMS.</li>
-      </ul>
     </section>
 
     <footer>
