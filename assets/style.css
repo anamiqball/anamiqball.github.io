@@ -192,38 +192,39 @@ header{
   margin: 0 8px;
 }
 
-/* Social buttons with bold logos */
+/* Social chips */
 .social-row{
   margin-top: 16px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
 }
 
 .social{
-  display:inline-flex;
-  align-items:center;
-  gap: 12px;
-  padding: 12px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.80);
+  background: rgba(255,255,255,0.75);
   border: 1px solid rgba(15,23,42,0.10);
-  font-weight: 800;
   color: var(--text);
-  text-decoration:none;
-  box-shadow: 0 10px 22px rgba(15,23,42,0.06);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(15,23,42,0.06);
 }
 
 .social:hover{
-  text-decoration:none;
-  transform: translateY(-0.5px);
+  text-decoration: none;
+  transform: translateY(-1px);
   transition: 160ms ease;
 }
 
-.logo{
-  width: 32px;
-  height: 32px;
-  flex: 0 0 32px;
+.social svg{
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
 }
 
 /* Buttons */
@@ -351,27 +352,4 @@ footer{
   .highlights{ max-width: none; }
 }
 
-/* --- FIX: stop social icons from exploding --- */
-.social-row { display:flex; flex-wrap:wrap; gap:12px; }
-
-.social{
-  display:inline-flex;
-  align-items:center;
-  gap:12px;
-}
-
-.social .logo{
-  width: 28px !important;
-  height: 28px !important;
-  max-width: 28px !important;
-  max-height: 28px !important;
-  flex: 0 0 28px !important;
-  display: inline-block !important;
-}
-
-.social .logo *{
-  vector-effect: non-scaling-stroke;
-}
-
-.social svg { width: 28px !important; height: 28px !important; }
 
