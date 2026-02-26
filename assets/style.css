@@ -73,10 +73,10 @@ header{
 
 .brand-text .name{
   font-size: 24px;
-  font-weight: 950;
+  font-weight: 700;
   letter-spacing: -0.4px;
   line-height: 1.05;
-  color: #6b7280;
+  color: #374151;
 }
 
 .brand:hover .brand-text .name{
@@ -201,7 +201,7 @@ header{
   gap: 7px;
   padding: 3px 0;
   color: var(--text);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   text-decoration: none;
 }
