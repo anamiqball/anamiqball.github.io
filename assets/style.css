@@ -67,6 +67,10 @@ header{
   box-shadow: 0 14px 30px rgba(37,99,235,0.14);
 }
 
+.brand-text{
+  padding-left: 6px;
+}
+
 .brand-text .name{
   font-size: 24px;
   font-weight: 950;
@@ -102,7 +106,7 @@ header{
   text-decoration: underline;
   text-decoration-color: rgba(15,23,42,0.28);
   text-underline-offset: 4px;
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 2.5px;
 }
 
 .tab.active{
@@ -128,7 +132,7 @@ header{
 
 /* ── Hero layout ─────────────────────────────── */
 .hero{
-  margin-top: 18px;
+  margin-top: 6px;
 }
 
 .hero-layout{
