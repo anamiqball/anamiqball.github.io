@@ -173,7 +173,14 @@ header{
   font-weight: 800;
   text-align: center;
   letter-spacing: -0.2px;
-  color: #374151;
+  color: #6b7280;
+}
+
+.aside-name:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(15,23,42,0.30);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
 /* Social chips — stacked in sidebar */
