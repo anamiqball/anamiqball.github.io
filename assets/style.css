@@ -49,6 +49,9 @@ header{
   color: inherit;
   min-width: 260px;
 }
+.brand:hover{
+  text-decoration: none;
+}
 
 .avatar{
   width: 46px;
@@ -65,14 +68,14 @@ header{
 }
 
 .brand-text .name{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 950;
   letter-spacing: -0.4px;
   line-height: 1.05;
 }
 
 .brand-text .tag{
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
   margin-top: 2px;
 }
