@@ -376,23 +376,21 @@ footer{
 .exp-head h3{
   margin: 0 0 2px;
 }
+.co-logo-link{
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: block;
+}
+.co-logo-link:hover{
+  opacity: 0.72;
+  transition: opacity 160ms ease;
+}
 .co-logo{
   width: 100px;
   height: 40px;
   object-fit: contain;
   object-position: left center;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-.co-link{
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: rgba(15,23,42,0.22);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-.co-link:hover{
-  text-decoration-color: rgba(15,23,42,0.6);
+  display: block;
 }
 .role{
   font-size: 14px;
