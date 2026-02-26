@@ -93,13 +93,16 @@ header{
   padding: 6px 10px;
   color: var(--muted);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
 }
 
 .tab:hover{
   color: var(--text);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(15,23,42,0.28);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
 }
 
 .tab.active{
