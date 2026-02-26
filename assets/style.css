@@ -170,15 +170,16 @@ header{
 
 .aside-name{
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
   letter-spacing: -0.2px;
-  color: #6b7280;
+  color: #9ca3af;
+  cursor: default;
 }
 
 .aside-name:hover{
   text-decoration: underline;
-  text-decoration-color: rgba(15,23,42,0.30);
+  text-decoration-color: rgba(15,23,42,0.35);
   text-decoration-thickness: 3px;
   text-underline-offset: 4px;
 }
@@ -274,7 +275,7 @@ header{
 }
 
 /* ── Other pages ─────────────────────────────── */
-h2{ margin: 0 0 10px; font-size: 22px; letter-spacing: -0.3px; }
+h2{ margin: 0 0 10px; font-size: 22px; letter-spacing: -0.3px; color: #374151; }
 .muted{ color: var(--muted); }
 .list{ margin: 10px 0 0; padding-left: 18px; }
 .list li{ margin: 8px 0; }
