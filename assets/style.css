@@ -76,6 +76,14 @@ header{
   font-weight: 950;
   letter-spacing: -0.4px;
   line-height: 1.05;
+  color: #6b7280;
+}
+
+.brand:hover .brand-text .name{
+  text-decoration: underline;
+  text-decoration-color: rgba(15,23,42,0.30);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
 .brand-text .tag{
@@ -170,18 +178,10 @@ header{
 
 .aside-name{
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   letter-spacing: -0.2px;
-  color: #9ca3af;
-  cursor: default;
-}
-
-.aside-name:hover{
-  text-decoration: underline;
-  text-decoration-color: rgba(15,23,42,0.35);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+  color: #374151;
 }
 
 /* Social chips — stacked in sidebar */
@@ -199,21 +199,16 @@ header{
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 7px 13px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.75);
-  border: 1px solid rgba(15,23,42,0.10);
+  padding: 3px 0;
   color: var(--text);
   font-size: 13px;
-  font-weight: 650;
+  font-weight: 500;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(15,23,42,0.06);
 }
 
 .social:hover{
   text-decoration: none;
-  transform: translateY(-1px);
-  transition: 160ms ease;
+  opacity: 0.65;
 }
 
 .social svg{
