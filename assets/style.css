@@ -377,7 +377,7 @@ footer{
   margin: 0 0 2px;
 }
 .co-logo{
-  height: 32px;
+  height: 40px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -389,13 +389,10 @@ footer{
   color: var(--muted);
   margin-bottom: 3px;
 }
-.co-link{
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.co-link:hover{
-  opacity: 0.8;
+.role-group + .role-group{
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
 }
 .kicker{
   font-size: 13px;
