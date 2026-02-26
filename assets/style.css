@@ -222,7 +222,7 @@ header{
   margin: 0;
 }
 
-.hero-sub{ margin: 8px 0 0; }
+.hero-sub{ margin: 8px 0 0; font-size: 15px; font-weight: 700; }
 .hero-blurb{ margin: 12px 0 0; max-width: 70ch; }
 
 .sep{
