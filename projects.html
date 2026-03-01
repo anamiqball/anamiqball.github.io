@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Anam Iqbal</title>
-  <link rel="stylesheet" href="assets/style.css?v=41" />
+  <link rel="stylesheet" href="assets/style.css?v=42" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 </head>
 
@@ -22,7 +22,6 @@
         <a class="tab" data-tab="research" href="research.html">Research</a>
         <a class="tab tab-cta" href="resume.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </nav>
-
     </div>
   </header>
 
@@ -30,10 +29,21 @@
     <section class="card">
       <h2>Selected systems projects</h2>
 
-      <div class="item">
+      <div class="filter-wrap">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Go">Go</button>
+        <button class="filter-btn" data-filter="C++">C++</button>
+        <button class="filter-btn" data-filter="C">C</button>
+        <button class="filter-btn" data-filter="Python">Python</button>
+        <button class="filter-btn" data-filter="Distributed Systems">Distributed Systems</button>
+        <button class="filter-btn" data-filter="Storage Systems">Storage Systems</button>
+        <button class="filter-btn" data-filter="Data Analysis">Data Analysis</button>
+      </div>
+
+      <div class="item" data-tags="Go,Distributed Systems,Fault Tolerance">
         <div class="item-head">
           <div>
-            <h3>Fault-Tolerant Key-Value Service on Raft (Go)</h3>
+            <h3>Fault-Tolerant Key-Value Service on Raft</h3>
             <div class="kicker">2024 • Replicated service with linearizable semantics under failures</div>
           </div>
           <div class="kicker">
@@ -45,13 +55,18 @@
           <li>Made retries safe with unique client and request identifiers plus server-side deduplication for exactly-once behavior.</li>
           <li>Integrated snapshotting by persisting both key-value (KV) state and deduplication metadata so crash recovery and log compaction preserve correctness.</li>
         </ul>
+        <div class="tags">
+          <span class="tag">Go</span>
+          <span class="tag">Distributed Systems</span>
+          <span class="tag">Fault Tolerance</span>
+        </div>
       </div>
 
-      <div class="item">
+      <div class="item" data-tags="C++,Storage Systems">
         <div class="item-head">
           <div>
-            <h3>Disk-Based Key-Value Store with Write-Ahead Logging (C++)</h3>
-            <div class="kicker">2024 • Be-tree index with checkpointing and recovery</div>
+            <h3>Disk-Based Key-Value Store with Write-Ahead Logging</h3>
+            <div class="kicker">2024 • Bε-tree index with checkpointing and recovery</div>
           </div>
           <div class="kicker">
             <a href="https://github.com/anamiqball/advanced_databases" target="_blank" rel="noreferrer">GitHub</a>
@@ -62,8 +77,38 @@
           <li>Flushed modified pages to persistent storage before checkpoint finalization and recovered by replaying the log from the latest checkpoint.</li>
           <li>Benchmarked read/write trade-offs under different persistence granularities.</li>
         </ul>
+        <div class="tags">
+          <span class="tag">C++</span>
+          <span class="tag">Storage Systems</span>
+          <span class="tag">Write-Ahead Logging</span>
+        </div>
       </div>
-      <div style="margin-top:20px;">
+
+      <div class="item" data-tags="C,Python,Storage Systems,Caching,Data Analysis">
+        <div class="item-head">
+          <div>
+            <h3>Segcache: Hot-Object Analysis for Memory Tiering</h3>
+            <div class="kicker">2025 • ObjecTier — Systems and Storage Group, University of Utah</div>
+          </div>
+          <div class="kicker">
+            <a href="https://github.com/anamiqball/objectier-segcache" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Extended Segcache with epoch-scoped hit counters to estimate recency-weighted hotness at segment and 4 KiB page granularity.</li>
+          <li>Built a Python trace-replay and analysis pipeline to summarize access skew using CDFs and guide DRAM/SSD placement decisions.</li>
+          <li>Benchmarked tiering against LRU/LFU baselines on skew-shift traces; ran sensitivity and ablation studies.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">C</span>
+          <span class="tag">Python</span>
+          <span class="tag">Storage Systems</span>
+          <span class="tag">Caching</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+      </div>
+
+      <div style="margin-top:24px;">
         <a href="https://github.com/anamiqball" target="_blank" rel="noreferrer">More on GitHub →</a>
       </div>
     </section>

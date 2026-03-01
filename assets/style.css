@@ -361,6 +361,57 @@ footer{
   word-break: break-all;
 }
 
+/* ── Project filters + tags ──────────────────── */
+.filter-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
+.filter-btn{
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(15,23,42,0.18);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+.filter-btn:hover{
+  color: var(--text);
+  border-color: rgba(15,23,42,0.35);
+}
+
+.filter-btn.active{
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tag{
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(37,99,235,0.08);
+  color: #2563eb;
+  border: 1px solid rgba(37,99,235,0.15);
+}
+
+.item.hidden{ display: none; }
+
 /* ── Experience/Research/Projects pages ──────── */
 .item{ margin-top: 20px; }
 .item:first-of-type{ margin-top: 10px; }
